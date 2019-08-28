@@ -1,7 +1,7 @@
 if executable('rg')
     set grepprg=rg
     let g:ag_prg='rg'
-    let g:ctrlp_user_command = 'rg %s -l -g ""'
+    let g:ctrlp_user_command = 'rg %s -l '
 elseif executable('ag')
     " Prefer Ag over Grep
     let g:ag_prg='ag'
